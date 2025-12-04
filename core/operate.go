@@ -46,7 +46,7 @@ func ValidateOperation(roleDef *RoleDef, op *Operation) error {
 			return err
 		}
 
-		op.CanonicalName = op.Domain + "." + op.Subdomain
+		op.CanonicalName = op.Subdomain + "." + op.Domain
 	}
 
 	return nil
